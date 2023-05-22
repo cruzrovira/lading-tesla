@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.5.1">
+    <title>Tesla - el coche de tus sueños</title>
+  <link rel="stylesheet" href="/_astro/index.e61469d5.css" /><script type="module">const l=document.querySelector("#landing-header"),c={root:null,rootMargin:"0px",threshold:.9},i=new IntersectionObserver(t=>{t.forEach(o=>{const{isIntersecting:r}=o;if(r){const s=o.target.getAttribute("data-header-color");l.style.color=s,console.log(l)}})},c),d=document.querySelectorAll(".section");d.forEach(t=>i.observe(t));const a=document.querySelectorAll("#landing-header  li"),e=document.querySelector("#menu-backdrop");a.forEach(t=>{t.addEventListener("mouseenter",()=>{const{left:o,top:r,width:s,height:n}=t.getBoundingClientRect();console.log({left:o,top:r,width:s,height:n}),e.style.setProperty("--left",`${o}px`),e.style.setProperty("--top",`${r}px`),e.style.setProperty("--width",`${s}px`),e.style.setProperty("--height",`${n}px`),e.style.opacity="1",e.style.visibility="visible"}),t.addEventListener("mouseleave",()=>{e.style.opacity="0",e.style.visibility="hidden"})});
+</script></head>
+  <body>
+    
+  <header class="fixed top-0 z-40 flex w-full items-center justify-between px-10 py-2 text-white" id="landing-header">
+  <div class="flex flex-grow basis-0">
+    <svg class="h-6 w-32" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path></svg>
+  </div>
+  <nav>
+    <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-medium [&>li>a]:text-current">
+      <li><a href="#">Model S</a></li>
+      <li><a href="#">Model 3</a></li>
+      <li><a href="#">Model x</a></li>
+      <li><a href="#">Model y</a></li>
+      <li><a href="#">Powerwall</a></li>
+      <li><a href="#">Carga</a></li>
+    </ul>
+  </nav>
+  <nav class="flex flex-grow basis-0 justify-end">
+    <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:font-medium [&>li>a]:text-current">
+      <li><a href="#">Soporte</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#">Cuenta</a></li>
+      <li><a href="#">Menú</a></li>
+    </ul>
+  </nav>
+  <div id="menu-backdrop" class="
+      absolute 
+      rounded bg-gray-500 
+      backdrop-blur-lg transition-all 
+      duration-300 ease-in-out
+      left-[var(--left)] 
+      top-[var(--top)] 
+      h-[var(--height)] 
+      w-[var(--width)]
+       opacity-0
+       -z-10
+      ">
+  </div>
+</header>
+  <main class="relative h-screen w-full snap-y snap-mandatory overflow-auto scroll-smooth">
+    <div class="snap-center">
+      <section class="section relative z-30 h-screen w-full overflow-hidden bg-black text-center" data-header-color="white">
+  <div class="relative z-30 flex h-full flex-col">
+    <header class="pt-40">
+      <h2 class="text-[40px] font-medium text-white">Disfrute de tesla</h2>
+      <p class="text-sm text-white">
+        programa una prueba de conducciçon hoy mismo
+      </p>
+    </header>
+    <footer class="flex flex-grow flex-col flex-nowrap justify-end pb-20">
+      <div>
+        <a href="#" class="rounded border-[3px] border-white bg-white/5 px-12 py-2 text-sm font-medium text-white backdrop-blur-lg transition-colors hover:bg-white hover:text-black">
+          Prueba de conducción</a>
+      </div>
+    </footer>
+  </div>
+  <div class="absolute bottom-0 top-0 z-10 h-full w-full">
+    <video class="h-full w-full object-cover" src="/public/video.webm" autoplay muted loop></video>
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="section relative z-30 h-screen w-full overflow-hidden bg-black text-center" data-header-color="black">
+  <div class="relative z-30 flex h-full flex-col">
+    <header class="pt-40">
+      <h2 class="text-[40px] font-medium text-gray-900">Model Y</h2>
+      <p class="text-sm text-gray-900 underline">
+        Concertar una prueba de conducción
+      </p>
+    </header>
+    <footer class="flex flex-grow flex-col flex-nowrap justify-end pb-20">
+      <div class="flex flex-wrap justify-center gap-2">
+        <a href="#" class="rounded border-[3px] border-gray-900 bg-gray-900 px-12 py-2 text-sm font-medium text-white backdrop-blur-lg transition-colors hover:border-white hover:bg-white hover:text-gray-900">
+          Explorar Inventario</a>
+        <a href="#" class="rounded border-[3px] border-white bg-white/5 px-12 py-2 text-sm font-medium text-gray-900 backdrop-blur-lg transition-colors hover:bg-white hover:text-black">
+          Pedido Personalizado</a>
+      </div>
+    </footer>
+  </div>
+  <div class="absolute bottom-0 top-0 z-10 h-full w-full">
+    <img class="h-full w-full object-cover object-center" src="/public/Modely.avif" alt="Model y">
+  </div>
+</section>
+    </div>
+  </main>
+
+  </body></html>
